@@ -57,7 +57,6 @@ vector<int> karatsuba(const vector<int> &a, const vector<int> &b)
 }
 
 long long solve(){
-
     int memberNum = member.size(), fanNum = fan.size();
     vector<int> members(memberNum), fans(fanNum);
     long long totalHug = 0; // ¸â¹ö ÀüºÎ°¡ Æ÷¿Ë == ³²³²ÀÌ ÇÑ½Öµµ x
@@ -72,6 +71,7 @@ long long solve(){
         if(sum[i] == 0)
             totalHug++;
     }
+    
     return totalHug;
 }
 
