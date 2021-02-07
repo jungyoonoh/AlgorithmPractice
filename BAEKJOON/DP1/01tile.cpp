@@ -4,6 +4,7 @@
 using namespace std;
 
 // 초항만 다른 피보나치 수열
+// 잔디가 갱신이 안돼서 테스트용 주석
 int cache[1000001];
 int solve(int n){
     if(n == 0 || n == 1)
