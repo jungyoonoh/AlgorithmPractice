@@ -2,6 +2,9 @@
 #include <string>
 #include <vector>
 
+#define endl '\n'
+#define fastio cin.sync_with_stdio(false); cin.tie(nullptr);
+
 using namespace std;
 
 string member; // F, M : 0, 1 
@@ -76,6 +79,7 @@ long long solve(){
 }
 
 int main(){
+	fastio;
     int TC;
     cin >> TC;
     while(TC--){
