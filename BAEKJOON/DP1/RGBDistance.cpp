@@ -12,7 +12,6 @@ int sum[1002][3] = {0,};
 
 int draw(int idx){
     if(idx == N) return 0;
-
     sum[idx][0] = min(sum[idx-1][1], sum[idx-1][2]) + R[idx];
     sum[idx][1] = min(sum[idx-1][0], sum[idx-1][2]) + G[idx];
     sum[idx][2] = min(sum[idx-1][0], sum[idx-1][1]) + B[idx];

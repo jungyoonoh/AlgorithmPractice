@@ -41,8 +41,6 @@ void init(){
 }
 
 int main(){
-    // ㅋㅋ tc 입력 안받고 10번 돌린게 레전드네
-    // 컴파일러 고장 이슈..
     int TC;
     cin >> TC;
     while(TC--){

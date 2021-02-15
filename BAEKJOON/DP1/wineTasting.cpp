@@ -16,7 +16,7 @@ int tasting(){
     int sav = -1;
     for(int i = 3; i <= n; i++){
         sav = max(cache[i-2] + wine[i], cache[i-3] + wine[i-1] + wine[i]);
-        sav = max(cache[i-1], sav); // 안마시는게 이득일수도 있다
+        sav = max(cache[i-1], sav); // 안마시는게 이득일수 있다
         cache[i] = sav;
     }
     
