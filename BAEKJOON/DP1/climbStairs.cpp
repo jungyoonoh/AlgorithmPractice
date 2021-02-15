@@ -10,7 +10,7 @@ int cache[301] = {0, }; // -> 도합
 // 1. 한번에 1개 or 2개 계단
 // 2. 연속된 3개의 계단 X
 // 3. 마지막은 반드시 밟아야
-// 밟지 않는 경우를 캐시로 포함할 이유가 없으므로 현재를 밟는 경우만 갱신
+
 int ascend(){
     for(int i = 0; i < 3; i++) // 계단이 1개 ~ 3개라면
         i == 0 ? cache[i] = stairs[i] : i == 1 ? cache[i] = stairs[i] + stairs[i-1] : cache[i] = max(stairs[i] + stairs[i-1], stairs[i] + stairs[i-2]);
