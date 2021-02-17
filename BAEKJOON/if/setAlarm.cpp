@@ -9,7 +9,6 @@ int main(){
     else {
         H == 0 ? cout << 23 << " " : cout << --H << " ";
         cout << M + 15;
-    }
-        
+    }        
     return 0;
 }
