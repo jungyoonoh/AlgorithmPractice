@@ -9,17 +9,17 @@ int A[1001];
 int dp[1001]; // 정방향
 int rdp[1001]; // 역방향
 
+// 제공하는 예시가 바이토닉이 X
+// 수열 S에서 Sk를 기준으로 바이토닉을 만족 && 가장 긴 k 찾기
 int solve(){
     for(int i = 1; i <= N; i++){
-        int pos = 0, rpos = 0;
+        int maxPos = 0, maxRpos = 0;
         for(int j = 1; j < i; j++){
-            if(A[j] < A[i])
-                pos = max(pos, dp[j]);
-            if(A[N - j + 1] < A[N - i + 1])
-                rpos = max(rpos, rdp[j]);
+            if(A[j] < A[i]) maxPos = max(maxPos, dp[j]);
+            if(A[N - j + 1] < A[N - i + 1]) maxRpos = max(maxRpos, rdp[j]);
         }
-        dp[i] = pos + 1; 
-        rdp[i] = rpos + 1; // dp는 순차
+        dp[i] = maxPos + 1; 
+        rdp[i] = maxRpos + 1; // dp는 순차
     }
     int sum = -1;
 
