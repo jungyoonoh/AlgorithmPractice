@@ -11,7 +11,7 @@ int solve(){
             if(j - weight[i] >= 0) dp[i][j] = max(dp[i-1][j], dp[i-1][j-weight[i]] + value[i]);        
             else dp[i][j] = dp[i-1][j];
         }
-
+        
     return dp[N][kg];
 }
 
