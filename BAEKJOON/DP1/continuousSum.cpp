@@ -30,7 +30,7 @@ int dp[100001]; // dp[i] i를 포함하는 연속합 중 최댓값
 int solve(){
     dp[0] = 0;
     for(int i = 1; i <= n; i++)
-        dp[i] = max(dp[i - 1] + S[i], S[i]);
+        dp[i] = max(dp[i - 1] + S[i], S[i]); // 시점 변경
 
     int ret = dp[1];
     for(int i = 2; i <= n; i++)

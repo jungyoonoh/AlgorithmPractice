@@ -27,7 +27,6 @@ int ans = 0;
 //     return 0;
 // }
 
-
 int main(){
     cin >> N;
     for(int i = 0; i < N; i++){
