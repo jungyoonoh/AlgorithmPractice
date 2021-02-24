@@ -6,6 +6,7 @@ using namespace std;
 int main(){
     cin.tie(NULL);
     cin.sync_with_stdio(false);
+    // init...
     int n, sol = 0, remainder[42];
     memset(remainder,0,sizeof(remainder));
     for(int i = 0; i < 10; i++){
