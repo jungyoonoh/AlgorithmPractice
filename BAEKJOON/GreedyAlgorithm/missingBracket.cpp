@@ -19,7 +19,6 @@ int main(){
             if(s[i] == '-') state = true; // 첫 숫자 skip
         }
     }
-    // 마지막 숫자
     temp = s.substr(idx, s.size() - idx);
     num = stoi(temp);
     sum += state ? -num : num;
