@@ -7,7 +7,7 @@ using namespace std;
 
 vector<int> card;
 int N, M, J = -1;
-// 전체 집합, 추출 표본, 뽑아야 할 갯수, 추출 표본의 현재 개수, 원소 iterator
+// 전체 집합, 추출 표본, 앞으로 뽑아야 할 갯수, 추출 표본의 현재 개수, 원소 iterator
 void Combination(vector<int> arr, vector<int> comb, int r, int index, int depth){
     if (r == 0) {
         int sum = 0;
@@ -19,8 +19,8 @@ void Combination(vector<int> arr, vector<int> comb, int r, int index, int depth)
         return;
     else {
         comb[index] = arr[depth];
-        Combination(arr, comb, r - 1, index + 1, depth + 1); // 현재 depth의 원소를 뽑기
-        Combination(arr, comb, r, index, depth + 1); // 현재 depth의 원소를 안뽑기
+        Combination(arr, comb, r - 1, index + 1, depth + 1); // 현재 depth의 원소 뽑기
+        Combination(arr, comb, r, index, depth + 1); // 현재 depth의 원소 안뽑기
     }
 }
 
