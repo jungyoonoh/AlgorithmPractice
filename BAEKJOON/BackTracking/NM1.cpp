@@ -23,6 +23,7 @@ void pick(int depth){
 
 int main(){
     // 1 ~ N 수중에 M개 뽑기
+    cin.tie(NULL); cin.sync_with_stdio(false);
     cin >> N >> M;
     pick(0);
     return 0;
