@@ -2,11 +2,10 @@
 #include <string.h>
 using namespace std;
 
-// 0이면 둘 수 있음, 1이면 둘 수 없음
 int ans = 0, N, chess[15][15];
-
 // 위쪽 볼필요x, 행정보는 반드시 한줄 이동하므로 x
 // -> 퀸을 놓은 칸 기준으로 아래쪽 영역만 확인
+// 칸에 +=를 하는 이유, 여러겹 겹쳤음을 알아보기 위함
 void putIt(int y, int x, int value){
     for(int i = 1; y+i < N; i++){
         chess[y+i][x] += value;
@@ -28,9 +27,7 @@ void doIt(int y){
             putIt(y,x,-1);
         }
     }
-
 }
-
 
 int main(){
     cin.tie(NULL);
