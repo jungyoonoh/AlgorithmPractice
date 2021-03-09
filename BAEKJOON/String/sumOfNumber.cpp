@@ -12,6 +12,6 @@ int main(){
     cin >> s;
     for(int i = 0; i < s.size(); i++)
         sum += s.at(i) - '0';
-    cout << sum;    
+    cout << sum;
     return 0;
 }
