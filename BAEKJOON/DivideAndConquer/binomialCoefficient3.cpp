@@ -28,7 +28,6 @@ long long factorial(int n){
 int main(){
     int N, K;
     cin >> N >> K;
-
     long long nF = factorial(N);
     // a^-1 == a^p-2 (mod p) 
     long long kF = factorial(K);
