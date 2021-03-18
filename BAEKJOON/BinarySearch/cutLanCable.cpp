@@ -31,7 +31,7 @@ int main(){
         cin >> lan[i];
 
     sort(lan, lan + K);
-    findSize(1, lan[K - 1]); // 가장 긴 랜선 길이
+    findSize(1, lan[K - 1]);
     cout << canCut;
     return 0;
 }
