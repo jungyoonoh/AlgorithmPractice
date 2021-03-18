@@ -23,7 +23,6 @@ int main(){
     for(int i = 0; i < M; i++){
         cin >> val;
         flag = false;
-        // N 일때도 성공함... 데이터 추가가 필요해보임
         findNum(0,N - 1,val);
         flag ? cout << 1 << '\n' : cout << 0 << '\n';
     }
