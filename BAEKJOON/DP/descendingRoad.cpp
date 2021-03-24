@@ -7,6 +7,7 @@ int M, N, cnt = 0, map[SIZE][SIZE], cache[SIZE][SIZE]; // y,x
 int moveDir[4][2] = { {0, 1}, {1, 0}, {0, -1}, {-1, 0} }; // 오 아 왼 위, y, x
 // 상하좌우 모두 가능함 
 
+// 수학 길찾기 거꾸로 버전
 // y,x 좌표로, 현재 값보다. 비교
 // map[a][b] 를 가는 경로의 수의 합 + 몇개 
 bool canMove(int y, int x, int value){
