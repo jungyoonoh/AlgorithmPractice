@@ -21,9 +21,10 @@ int main(){
         }
         sort(recruit.begin(), recruit.end());
         int comp = recruit[0].second;
-        for(int i = 0; i < N - 1; i++){
-            if() {
+        for(int i = 1; i < N; i++){
+            if(comp > recruit[i].second) {
                 cnt++;
+                comp = recruit[i].second;
             }
         }
         cout << cnt << '\n';
