@@ -2,7 +2,7 @@
 #include <math.h>
 #include <algorithm>
 #include <string.h>
-#define SIZE 500
+#define SIZE 2100000
 using namespace std;
 
 long long tree[SIZE], path[SIZE], sum[SIZE];
