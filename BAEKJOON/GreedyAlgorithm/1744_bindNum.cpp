@@ -7,8 +7,8 @@ int N, input;
 long long sum = 0;
 int main(){
     cin >> N;
-    priority_queue <int, vector<int>, less<int>> pqPlus; // 양
-    priority_queue <int, vector<int>, greater<int>> pqMinus; // 음,0
+    priority_queue <int, vector<int>, less<int>> pqPlus;
+    priority_queue <int, vector<int>, greater<int>> pqMinus; 
     for(int i = 0; i < N; i++){
         cin >> input;
         if(input > 0) pqPlus.push(input);

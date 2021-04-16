@@ -12,7 +12,6 @@ int main(){
     cin >> N >> K;
     cin >> numToStr;
 
-
     for(int i = 0; i < N; i++){
         while(!dq.empty() && K != 0 && dq.back() < numToStr[i]){
             dq.pop_back();
