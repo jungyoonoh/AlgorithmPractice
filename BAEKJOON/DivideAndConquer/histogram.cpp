@@ -31,12 +31,10 @@ long long findRect(int left, int right){
 
 int main(){
     cin.tie(NULL); cin.sync_with_stdio(false);
-    while(true){
-        cin >> n;
-        if(n == 0) break;
-        for(int i = 0; i < n; i++)
-            cin >> histogram[i];
-        cout << findRect(0,n - 1) << '\n';
-    }
+    cin >> n;
+    for(int i = 0; i < n; i++)
+        cin >> histogram[i];
+    cout << findRect(0,n - 1) << '\n';
+    
     return 0;    
 }
