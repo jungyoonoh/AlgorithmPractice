@@ -10,6 +10,7 @@ int cache[1001];
 int A[1001];
 int ans = 0;
 
+
 // int main(){
 //     cin >> N;
 //     for(int i = 1; i <= N; i++)

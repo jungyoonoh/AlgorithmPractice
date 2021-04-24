@@ -8,7 +8,8 @@ int dp[101][100001];
 int solve(){
     for(int i = 1; i <= N; i++)
         for(int j = 1; j <= kg; j++){
-            if(j - weight[i] >= 0) dp[i][j] = max(dp[i-1][j], dp[i-1][j-weight[i]] + value[i]);        
+            if(j - weight[i] >= 0) 
+                dp[i][j] = max(dp[i-1][j], dp[i-1][j-weight[i]] + value[i]);
             else dp[i][j] = dp[i-1][j];
         }
         

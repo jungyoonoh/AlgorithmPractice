@@ -2,7 +2,6 @@
 
 using namespace std;
 
-// A를 B번 곱한 숫자를 C로 나눠야함
 long long A,B,C;
 long long solution(long long a, long long b){
     if(b == 0) return 1;
