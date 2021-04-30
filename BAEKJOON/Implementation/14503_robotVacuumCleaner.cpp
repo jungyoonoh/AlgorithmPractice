@@ -21,7 +21,6 @@ queue<pair<pair<int,int>, int>> q;
 // 3. 왼쪽 방향에 청소할 공간이 없다면 그 방향으로 회전하고 2번으로 돌아간다.
 // 4. 네 방향 모두 청소가 되어있거나 벽인 경우에는 바라보는 방향 유지한 채 후진하고 2번
 // 5. 네 방향 모두 청소가 되어있거나 벽이면서 뒤쪽 방향이 벽이라 후진할 수 없는 경우에 작동 멈춤
-
 // 이미 청소된곳은 청소안함, 벽은 통과 못함.
 
 int count(){
@@ -58,7 +57,7 @@ void solve(){
             int moveY = y + dy;
             int moveX = x + dx;
             
-            if(moveY >= 0 && moveY < N && moveX >= 0 && moveX < N){
+            if(moveY >= 0 && moveY < N && moveX >= 0 && moveX < M){
                 // 청소 안됐을때만 이동
                 if(isClean[moveY][moveX] == 0 && map[moveY][moveX] == 0){
                     q.push({{moveY, moveX}, moveDir});
@@ -80,7 +79,7 @@ void solve(){
             int moveY = y - dy; // 반대 방향 이동
             int moveX = x - dx;
             
-            if(moveY >= 0 && moveY < N && moveX >= 0 && moveX < N){
+            if(moveY >= 0 && moveY < N && moveX >= 0 && moveX < M){
                 // 뒤가 벽이면
                 if(map[moveY][moveX] == 1){
                     break;
