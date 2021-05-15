@@ -14,6 +14,6 @@ long long solve(int n, int k){
 int main(){
     cin >> N >> K;
     memset(dp, -1, sizeof(dp));
-    cout << solve(N,K) % 10007;
+    cout << solve(N,K);
     return 0;
 }
