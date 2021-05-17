@@ -10,7 +10,7 @@ using namespace std;
 int N, M, x,y, K, command[1001], map[20][20];
 int dice[6] = {0, }; // 0은 항상 윗면
 int mv[4][2] = {{0,1}, {0,-1}, {-1,0}, {1,0}};
-
+// 전개도 참고
 void rollDice(int command){
     int beforeDice[6];
     for(int i = 0; i < 6; i++)
