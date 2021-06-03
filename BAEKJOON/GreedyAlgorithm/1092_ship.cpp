@@ -31,6 +31,7 @@ int main(){
     
     int time = 0, cnt = 0;
     while(1){
+        // 한도가 낮은 크레인이 2번 잡는게 곧 한도 높은 크레인과 나눠 집는것과 같은 이치임
         for(int i = N - 1; i >= 0; i--){
             for(int j = i; j >= 0; j--){
                 if(canPick[j] > 0) {
