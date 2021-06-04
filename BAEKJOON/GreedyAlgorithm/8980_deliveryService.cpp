@@ -9,13 +9,6 @@ int N, C, M;
 int total[Village];
 vector<pair<pair<int,int>, int>> list;
 
-bool compare(pair<pair<int,int>, int> &a, pair<pair<int,int>, int> &b){
-    if(a.first.first < b.first.first) return true;
-    else if (a.first.first == b.first.first){
-        if(a.first.second >= b.first.second) return true;
-    }else return false;
-}
-
 int main(){
     cin >> N >> C;
     cin >> M;
