@@ -25,10 +25,6 @@ void rotate(int gearNum, int rotateDir){
 
 void solve(int gearNum, int rotateDir){
     if(gearNum < 1 || gearNum > 4) return;
-    // 1번 톱니의 2번 idx
-    // 2번 톱니의 6번 / 2번 idx
-    // 3번 톱니의 6번 / 2번 idx
-    // 4번 톱니의 6번 idx 봐야함
     
     if(isRotate[gearNum - 1]) return; 
 
