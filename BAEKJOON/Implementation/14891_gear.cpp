@@ -24,12 +24,9 @@ void rotate(int gearNum, int rotateDir){
 }
 
 void solve(int gearNum, int rotateDir){
-    if(gearNum < 1 || gearNum > 4) return;
-    
+    if(gearNum < 1 || gearNum > 4) return;    
     if(isRotate[gearNum - 1]) return; 
-
     isRotate[gearNum - 1] = true;
-
     if(gearNum >= 2){
         // 왼쪽을 고려
         if(gear[gearNum - 1].at(6) != gear[gearNum - 2].at(2))
