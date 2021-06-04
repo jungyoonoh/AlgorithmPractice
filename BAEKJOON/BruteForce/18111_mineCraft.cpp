@@ -12,7 +12,7 @@ using namespace std;
 int N,M,B; // 가로 세로 인벤의 벽돌 갯수
 int map[501][501];
 int minBound = 257, maxBound = -1;
-pair<int, int> ans; // 시간과 땅의 높이를 저장
+pair<int, int> ans; // 시간과 땅의 높이
 
 
 void solve(int height){
@@ -25,11 +25,6 @@ void solve(int height){
             int val = height - map[i][j]; 
             if(val == 0) continue;
             else cnt += val;
-            // else if(val > 0){
-            //     cnt += val; // 쌓으니까 블럭 소모                
-            // }else if(val < 0){
-            //     cnt += val; // 블럭을 줄여야 하니 인벤토리의 블록 증가
-            // }
         }
     }
     
