@@ -6,7 +6,7 @@
 using namespace std;
 int map[50][50];
 int N,M;
-int cache[50][50]; // 시작점으로부터 거리를 기록해주기 위해
+int cache[50][50];
 string str[50];
 
 queue<pair<int,int>> q;
@@ -32,7 +32,7 @@ int solve(int y, int x){
             if(nextY >= 0 && nextY < N && nextX >= 0 && nextX < M){
                 if(map[nextY][nextX] == 1 && cache[nextY][nextX] == 0){
                     q.push({nextY, nextX});
-                    cache[nextY][nextX] = cache[y][x] + 1; // 한칸 이동했으므로
+                    cache[nextY][nextX] = cache[y][x] + 1; // 한칸 이동
                 }
             }
             res = max(res, cache[y][x]);
