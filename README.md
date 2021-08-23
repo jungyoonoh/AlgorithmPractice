@@ -5,5 +5,5 @@ Baekjoon Online Judge 기록용
 
 2021.01 ~ 2021.06 (C++)    
 
-이것이 코딩 테스트다 with 파이썬
+이것이 코딩 테스트다 with 파이썬    
 2021.08 ~ ing (Python)
