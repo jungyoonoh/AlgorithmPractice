@@ -1,7 +1,9 @@
 # AlgorithmPractice
 
-Algospot & 알고리즘 문제 해결 전략 1 ~ 2권 <br>
-Baekjoon Online Judge 기록용 <br>
+Algospot & 알고리즘 문제 해결 전략 1 ~ 2권    
+Baekjoon Online Judge 기록용    
 
-2020.01 ~ 2020.06 (C++)<br>
-2020.07 ~ ing (Python)
+2021.01 ~ 2021.06 (C++)    
+
+이것이 코딩 테스트다 with 파이썬    
+2021.08 ~ ing (Python)
