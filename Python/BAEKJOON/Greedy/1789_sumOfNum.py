@@ -1,5 +1,5 @@
 # 1789번 수들의 합 (Greedy) 
-# https://www.acmicpc.net/problem/2720
+# https://www.acmicpc.net/problem/1789
 
 S = int(input())
 start = 1
