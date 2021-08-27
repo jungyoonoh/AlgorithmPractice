@@ -1,4 +1,5 @@
 # Simulation
+# X, Y가 기존 문제랑 반대임
 
 N = int(input())
 
