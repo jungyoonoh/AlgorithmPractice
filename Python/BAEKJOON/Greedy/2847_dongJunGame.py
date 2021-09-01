@@ -18,4 +18,4 @@ for i in range(len(data) - 1):
         move += data[i+1] - data[i] + 1
         data[i+1] = data[i] - 1
 
-print(move) 
+print(move)
