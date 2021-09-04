@@ -17,8 +17,7 @@ map = [list(map(int, input().split())) for _ in range(N)]
 # 1. 90도 왼쪽으로 회전을 해서 갈 방향을 고른다
 # 2. 만약에 거기가 가보지 않은 칸이라면, 한칸 전진하고 그렇지 않다면 회전만 한 채로 다시 1번을 수행한다
 # 3. 네 방향 모두 가봤거나 바다라면 방향을 유지한 채로 한칸 뒤로 가고 1단계로 돌아간다. 이때 뒤로갔을때가 바다라면 이동을 멈춘다.
-print(map)
-print(isVisited)
+
 count = 1
 doIt = 0
 while True:
