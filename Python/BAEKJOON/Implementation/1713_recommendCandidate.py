@@ -9,11 +9,15 @@ candidate = dict()
 
 for i in range(recommend):
     if res[i] in candidate:
+        # 이미 있음
         candidate[res[i]][0] += 1
     else: 
+        # 꽉찼을때        
         if len(candidate) < N:
-            candidate[res[i]] = [1, i] 
+            # 비어있음
+            candidate[res[i]] = [1, i] # i번째 등록된 녀석임. (오래됨 판단)
         else:
+            # 없음
             delCandidate = sorted(candidate.items(), key = lambda x: (x[1][0], x[1][1]))
             minCandidate = delCandidate[0][0]
             del(candidate[minCandidate])

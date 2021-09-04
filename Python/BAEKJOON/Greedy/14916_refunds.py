@@ -1,4 +1,4 @@
-# 1543번 거스름돈 (Greedy) 
+# 14916번 거스름돈 (Greedy) 
 # https://www.acmicpc.net/problem/14916
 # 기본 거스름돈은 단위가 배수관계, 이 문제는 배수관계가 아닌 경우
 

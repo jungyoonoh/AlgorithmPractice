@@ -5,7 +5,6 @@ import sys
 N = int(input())
 
 data = list(map(int, sys.stdin.readline().split()))
-
 data.sort(reverse=True)
 
 for i in range(2, len(data) + 2):
