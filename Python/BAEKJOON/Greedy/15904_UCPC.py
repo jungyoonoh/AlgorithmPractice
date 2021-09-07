@@ -2,9 +2,7 @@
 # https://www.acmicpc.net/problem/15904
 
 data = list(input())
-
 UCPC = ['U', 'C', 'P', 'C']
-
 count = 0
 for obj in data:
     if count == 4: break

@@ -1,5 +1,5 @@
-# 15903번 카드 합체 놀이 (Greedy) 
-# https://www.acmicpc.net/problem/15903
+# 18310번 안테나 (Greedy) 
+# https://www.acmicpc.net/problem/18310
 
 N = int(input())
 data = list(map(int, input().split()))
