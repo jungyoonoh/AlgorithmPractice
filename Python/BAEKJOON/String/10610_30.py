@@ -3,7 +3,7 @@
 
 num = input()
 check = True
-if '0' in num: # 만들 수 있는 숫자가 10으로 나눌 수 있다면
+if '0' in num: 
     num = sorted(list(num), reverse=True)
     s = int(''.join(num))
     if s % 3 != 0: 
