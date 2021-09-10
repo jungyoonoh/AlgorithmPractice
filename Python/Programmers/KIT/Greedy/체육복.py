@@ -3,10 +3,10 @@
 
 def solution(n, lost, reserve):
     loss = set(lost)
-    rest = set(reserve) # 만약 겹치는 애들은 빌려줄 수는 없지만, lost도 아님
+    rest = set(reserve) 
     intersecs = rest & loss
     rest = rest - intersecs
-    loss = loss - intersecs # 실제 빌려줄 수 있는 애들. 
+    loss = loss - intersecs
     answer = n - len(loss)
     cnt = 0
     for n in loss:
