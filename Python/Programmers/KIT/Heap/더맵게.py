@@ -14,8 +14,6 @@ def solution(scoville, K):
         m2 = heapq.heappop(scoville)
         heapq.heappush(scoville, m1 + m2 * 2)
         answer += 1
-        if scoville[0] >= K:
-            break     
 
     return answer
 
