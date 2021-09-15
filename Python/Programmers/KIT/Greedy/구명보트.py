@@ -7,7 +7,6 @@ def solution(people, limit):
     answer = 0
     people.sort()
     dq = deque(people)
-    print(dq)
     while len(dq):
         now = 0
         while len(dq) and now + dq[-1] <= limit:
