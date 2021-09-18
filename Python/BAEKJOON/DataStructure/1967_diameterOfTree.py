@@ -1,14 +1,12 @@
 # 1967번 트리의 지름 (Tree) 
 # https://www.acmicpc.net/problem/1967
 
-# 리프만 고려하자
-
 import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(10**4 + 1)
 def solution(tree, start, now, isVisited):
     global dist, M
-    if start != now and len(tree[now]) == 1: # 모두탐색 or edge
+    if start != now and len(tree[now]) == 1:
         M = max(M, dist)
         return 
     isVisited[now] = True
@@ -29,7 +27,7 @@ for i in range(N - 1):
 
 M = 0
 for i in range(1, N + 1):
-    if len(tree[i]) == 1: # edge
+    if len(tree[i]) == 1: # leaf
         dist = 0
         isVisited = [False] * (N+1)
         solution(tree, i, i, isVisited)
