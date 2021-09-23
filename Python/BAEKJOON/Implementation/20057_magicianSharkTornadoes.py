@@ -54,14 +54,12 @@ repeat = 1
 y = x = N // 2
 ans = 0
 flag = True
-j = 1
 while flag:
     dir = (dir + 1) % 4
     for i in range(repeat):
         y += moveY[dir]
         x += moveX[dir]
         ans += spread(y, x, dir)
-        j += 1
         if y == 0 and x == 0: 
             flag = False
             break
