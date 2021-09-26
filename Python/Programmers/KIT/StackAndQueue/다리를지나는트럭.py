@@ -27,7 +27,6 @@ def solution(bridge_length, weight, truck_weights):
                 i += 1
       
         bridge.append(nextTruck) 
-        print(bridge)
 
         answer += 1
 
