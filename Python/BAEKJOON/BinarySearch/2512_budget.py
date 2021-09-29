@@ -1,5 +1,5 @@
-# 10815번 숫자 카드 (BinarySearch) 
-# https://www.acmicpc.net/problem/10815
+# 2512번 예산 (BinarySearch) 
+# https://www.acmicpc.net/problem/2512
 
 N = int(input())
 
