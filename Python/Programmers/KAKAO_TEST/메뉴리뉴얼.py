@@ -1,3 +1,6 @@
+# 프로그래머스 코딩테스트 연습 > 2020 KAKAO BLIND RECRUITMENT > 메뉴 리뉴얼
+# https://programmers.co.kr/learn/courses/30/lessons/72411
+
 import itertools
 from collections import defaultdict
 def solution(orders, course):
