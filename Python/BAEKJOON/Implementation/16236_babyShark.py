@@ -61,17 +61,18 @@ while True:
     if len(sharkCanFeedList) > 0:
         sharkCanFeedList.sort()
         y, x, time = sharkCanFeedList[0][0], sharkCanFeedList[0][1], sharkCanFeedList[0][2] 
-        print("상어가 이동합니다")
-        print("이전 : ", "[",sharkY, sharkX,"] -> 이후 : ", "[",y, x,"]")
+
         # feed
         feedCnt += 1
         ans += time
         if feedCnt == babySize:
             babySize += 1
             feedCnt = 0
-        board[sharkY][sharkX] = 0 # 원래자리
-        board[y][x] = 9 # 새 자리
-        sharkY, sharkX = y, x # 갱신
+        
+        # 위치 갱신
+        board[sharkY][sharkX] = 0
+        board[y][x] = 9
+        sharkY, sharkX = y, x 
     else: 
         break
 
