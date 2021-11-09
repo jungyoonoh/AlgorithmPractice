@@ -13,3 +13,4 @@ for i in range(N):
         b = r
     
     print(int((n1 * n2) / a))
+    

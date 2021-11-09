@@ -1,4 +1,4 @@
-# 2447번 별찍기 10 (Implementation) 
+# 2447번 별찍기 10 (Recursion) 
 # https://www.acmicpc.net/problem/2447
 
 def drawStar(board, n, y, x):
