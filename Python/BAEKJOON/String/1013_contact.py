@@ -1,5 +1,5 @@
-# 1427번 contact (String) 
-# https://www.acmicpc.net/problem/1427
+# 1013번 contact (String) 
+# https://www.acmicpc.net/problem/1013
 
 import re
 
